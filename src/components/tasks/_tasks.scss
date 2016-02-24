@@ -1,0 +1,54 @@
+
+.tasks-container {
+
+    .addTaskButton {
+      text-transform: none;
+      color: $color-brand;
+    }
+
+    .addTaskButton, i {
+        font-size: 12px;
+    }
+
+    md-list-item, md-list-item > .md-no-style {
+        height: auto;
+        min-height: 68px;
+    }
+
+    .taskCheck {
+    	margin-right: 15px;
+    }
+
+    .taskContent {
+        margin-right: 10px;
+    }
+
+    .taskDueDate {
+        text-align: right;
+    }
+
+    .taskCheck md-checkbox {
+    	color: $color-brand;
+    }
+
+    .taskCheck md-checkbox {
+    	margin: 0;
+    }
+
+    .taskContent span {
+    	line-height: 16px;
+    }
+
+    .taskOverdue {
+        color: $color-brand;
+    }
+
+    .taskToday {
+
+    }
+
+    .taskUpcoming {
+
+    }
+
+}

@@ -1,0 +1,27 @@
+<div flex class="contacts-container">
+	
+	<md-content layout="row">
+
+		<md-button class="md-raised addContactButton">
+			<i class="material-icons">add</i>
+			Add Contact
+		</md-button>
+	
+	</md-content>
+
+	<md-content layout-xs="column" layout="row">
+
+    	
+
+        <div flex layout="column">
+            
+            <fc-contact data-ng-repeat="c in vm.contacts | orderBy : vm.sortOrder" class="contacts"></fc-contact>
+
+        </div>
+
+    </md-content>
+
+</div>
+
+
+

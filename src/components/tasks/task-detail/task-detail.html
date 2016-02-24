@@ -1,0 +1,72 @@
+<md-content class="taskDetail" layout="column">
+
+	<md-list>
+	
+		<md-list-item flex layout="row">
+			
+			<img flex="nogrow" ng-src="{{task.person.picture ? task.person.picture : 'src/images/user-icon-placeholder.png'}}" class="md-avatar contact-image" />
+			
+			<div flex layout="row" layout-align="space-between stretch">
+
+				<div flex= class="md-list-item-text taskContent" layout="column" layout-align="start start">
+				
+					<span class="md-body-2">{{ getName(task[0].contact) }}</span>
+      			
+      				<a ng-href="#" class="contactDetailsBtn" >Contact Details</a>
+	    	
+		    	</div>   		
+		    
+		    	<div class="md-list-item-text" ng-class="{'taskOverdue': vm.dueOn}">
+			    	{{ calculateDueDate(task[0].dueDate) }}
+	    		</div>
+			
+			</div>
+
+		</md-list-item>
+
+	</md-list>
+
+	<md-list>
+		
+		<md-list-item class="detailGroup" layout="column" layout-align="start start">
+			<span class="md-body-2 subText">Due Date</span>
+			<span class="md-body-2">{{  calculateDueDateFormatted(task[0].dueDate) }}</span>
+		</md-list-item>
+
+		<md-list-item class="detailGroup" layout="column" layout-align="start start">
+			<span class="md-body-2 subText">Communication Method</span>
+			<span class="md-body-2">{{ task[0].type }}</span>
+		</md-list-item>
+
+		<md-list-item class="detailGroup" layout="column" layout-align="start start">
+			<span class="md-body-2 subText">Follow Up Frequency</span>
+			<span class="md-body-2">{{ task[0].frequency }}</span>
+		</md-list-item>
+
+		<md-list-item class="detailGroup" layout="column" layout-align="start start">
+
+			<span class="md-body-2 subText">Primary Owner</span>
+			<span class="md-body-2">{{ getPrimaryOwner(task[0].primaryOwner) }}</span>
+			<!-- <md-chips ng-model="getPrimaryOwner(task[0][0].primaryOwner)" class="detailGroup" layout="column" layout-align="start start">
+				<md-chip-template>
+	        		<strong>{{$chip}}</strong>
+	      		</md-chip-template>
+			</md-chips> -->
+
+		</md-list-item>
+
+	</md-list>
+
+	<md-content layout="row">
+  
+    	<md-button class="editTaskBtn">
+			Edit Task
+    	</md-button>
+
+    	<md-button class="deleteTaskBtn">
+			Delete Task
+    	</md-button>
+	
+	</md-content>
+
+</md-content>

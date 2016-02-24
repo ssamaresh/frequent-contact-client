@@ -1,0 +1,113 @@
+
+<!-- <div class="overlay" ng-show="vm.isOpen">
+</div>
+ -->
+	
+    <!-- <div class="action-buttons" layout="row" layout-align="end end">
+  		
+  		<md-fab-speed-dial class="md-fab-bottom-right" md-open="vm.isOpen" md-direction="left" ng-class="vm.selectedMode">
+
+	        <md-fab-trigger>
+	          
+	          <md-button aria-label="add" class="md-fab">
+	          	<i class="material-icons">{{vm.createButton}}</i>
+	          
+	          </md-button>
+
+	        </md-fab-trigger>
+
+	        <md-fab-actions>
+
+	  			<md-button aria-label="Contact" class="md-fab md-raised">
+	  				<i class="material-icons">person_add</i>
+	      		</md-button>
+	        
+	      		<md-button aria-label="Meeting" class="md-fab md-raised">
+					<i class="material-icons">people</i>
+	      		</md-button>
+	          
+	          	<md-button aria-label="Call" class="md-fab md-raised">
+	            	<i class="material-icons">call</i>
+	          	</md-button>
+	          
+	          	<md-button aria-label="Email" class="md-fab md-raised">
+	            	<i class="material-icons">email</i>
+	          	</md-button>
+	        
+	    	</md-fab-actions>
+      
+      </md-fab-speed-dial>
+    
+    </div> -->
+
+    <div ng-controller="FooterController as vm">
+  <div class="md-padding" layout="column">
+
+    <div layout="row" layout-align="end end">
+      <md-fab-speed-dial md-open="vm.isOpen" md-direction="{{vm.selectedDirection}}" ng-class="vm.selectedMode">
+        <md-fab-trigger>
+          <md-button aria-label="menu" class="md-fab md-warn">
+            <md-icon md-svg-src="img/icons/menu.svg"></md-icon>
+          </md-button>
+        </md-fab-trigger>
+
+        <md-fab-actions>
+          <md-button aria-label="Twitter" class="md-fab md-raised">
+            <i class="material-icons">person_add</i>
+          </md-button>
+          <md-button aria-label="Facebook" class="md-fab md-raised">
+           <i class="material-icons">people</i>
+          </md-button>
+          <md-button aria-label="Google Hangout" class="md-fab md-raised">
+			<i class="material-icons">call</i>
+          </md-button>
+          <md-button aria-label="Google Hangout" class="md-fab md-raised">
+			<i class="material-icons">email</i>
+          </md-button>
+        </md-fab-actions>
+      </md-fab-speed-dial>
+    </div>
+  </div>
+
+
+<pre>{{vm.isOpen}}</pre>
+</div>
+<!-- <div class="action-buttons-wrapper" ng-show="vm.showActions">
+	
+	<div class="createContact-button" id="contactButton">
+		<span>New Contact</span>
+		<button class="btn" ui-sref="createContact ">
+			<i class="fa fa-user-plus"></i>
+		</button>
+	</div>
+	
+  	<div class="action-button" id="meetingButton">
+  		<span>Meeting</span>
+	  	<button class="btn" ui-sref="createMeeting">
+	  		<i class="fa fa-users"></i>
+	  	</button>
+	</div>
+
+	<div class="action-button" id="callButton">
+		<span>Call</span>
+		<button class="btn" ui-sref="createCallEvent">
+			<i class="fa fa-phone"></i>
+		</button>
+	</div>
+ 	
+ 	<div class="action-button" id="emailButton">
+ 		<span>Email</span>
+	 	<button class="btn" ui-sref="createEmailEvent">
+	 		<i class="fa fa-envelope"></i>
+	 	</button>
+  	</div>
+
+</div>
+
+
+<div class="create-button-container">
+	<button ng-click="vm.toggleAction()" class="create-button btn">
+		<i class="glyphicon" ng-class="{'glyphicon-plus': !vm.showActions, 'glyphicon-remove': vm.showActions}"></i>
+	</button>
+</div>
+ -->

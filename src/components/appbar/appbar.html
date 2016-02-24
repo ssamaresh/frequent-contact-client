@@ -1,0 +1,33 @@
+<div layout="column" class="appbar-container">
+    
+    
+	
+	<div flex="80" layout="row">
+
+		<div flex="95">
+			<!-- <md-button class="md-icon-button" hide-gt-sm ng-click="vm.toggleSidenav()" aria-label="Show Navbar">
+        		<md-icon md-svg-icon="navigation:menu"></md-icon>
+    		</md-button> -->
+		</div>
+
+		<div flex="noshrink">
+    		<a id="logo-icon" class="navbar-brand" ui-sref="dashboard">
+      			<img src="images/sapient-logo.svg" height="100%" width="auto">
+    		</a>
+  		</div>
+	
+	</div>
+
+	<div flex="20" layout="row" class="datetime-container">
+	
+		<div flex="85"></div>
+	
+		<div flex="noshrink" class="currentDateTime">
+			<span>{{vm.date | date: 'MMMM dd, yyyy'}}</span>
+			<span>{{vm.date | date: 'h:mm a'}}</span>
+		</div>
+		
+	</div>
+
+    
+</div>

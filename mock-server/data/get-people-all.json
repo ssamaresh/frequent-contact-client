@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "_embedded": {
+            "employment": [
+                {
+                    "companyName": "Sapient"
+                }
+            ]
+        }
+    },
+    {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "_embedded": {
+            "employment": [
+                {
+                    "companyName": "Fidelity"
+                }
+            ]
+        }
+    }
+]

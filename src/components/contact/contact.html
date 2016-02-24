@@ -1,0 +1,36 @@
+<md-list-item flex class="md-2-line contact-container" >
+
+  <md-card flex layout="row">
+  
+    <md-card-title>
+  
+      <img flex="nogrow" ng-src="{{c.picture ? c.picture : 'src/images/user-icon-placeholder.png'}}" class="md-avatar contact-image" />
+            
+      <md-card-title-text flex="none" class="contactName">
+        <span class="md-body-2">{{c.firstName}} {{c.lastName}}</span>
+        <span class="md-subhead">{{c.company}} - {{c.title}}</span>
+      </md-card-title-text>
+      
+      <md-card-title-text flex="nogrow" class="contactPhone">
+        <span class="md-body-2">{{c.phone}}</span>
+      </md-card-title-text>
+
+      <md-card-title-text flex="nogrow">
+        <span class="md-body-2">email placeholder</span>
+      </md-card-title-text>
+
+      <md-card-title-text flex="nogrow">
+        <span class="md-body-2">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do...</span>
+        <span class="md-subhead">Last contact on Dec 14th, 2015</span>
+      </md-card-title-text>
+
+      <md-card-title-text flex="nogrow">
+        <span class="md-body-2">Overdue</span>
+      </md-card-title-text>
+    
+    </md-card-title>
+
+  </md-card>
+
+</md-list-item>
+

@@ -1,0 +1,25 @@
+<div class="sort-container" layout="column" ng-cloak>
+  
+  <div layout="row">
+    
+    <span flex="95"></span>
+
+    <span flex="none" class="md-title">Sort</span>
+    
+    <md-input-container class="sort-select" flex="none" style="margin-right: 10px;">
+
+		<!-- <md-select ng-model="vm.sortOrder"> -->
+		<md-select ng-model="vm.sort" ng-change="vm.sortChanged()"></select>
+			<md-option ng-repeat="sortOption in vm.sortOptions" ng-value="sortOption">{{sortOption}}</md-option>
+		<!-- <md-option ng-repeat="option in vm.sortOptions" value="{{option}}">{{option}}</md-option> -->   
+			<!-- <md-option value="firstName">First Name</md-option>
+			<md-option value="lastName">Last Name</md-option> -->
+		
+		</md-select>
+    
+    </md-input-container>
+    
+  </div>
+  
+
+</div>

@@ -1,0 +1,18 @@
+// CORE
+@import "core/styles/variables";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "./core/styles/core";
+
+// PAGES
+@import "components/approot/approot";
+@import "components/contacts/contacts";
+@import "components/dashboard/dashboard";
+@import "components/tasks/tasks";
+
+// PANELS
+@import "components/appbar/appbar";
+@import "components/contact/contact";
+@import "components/history/history";
+@import "components/sidenav/sidenav";
+@import "components/tabs/tabs";
+@import "components/tasks/task-detail/task-detail";

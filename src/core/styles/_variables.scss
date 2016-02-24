@@ -1,0 +1,55 @@
+/* -----------------------------------------------------------------------------
+ * variables
+ * -------------------------------------------------------------------------- */
+
+
+/* ----- Measurements: width, height ----- */
+$height-top-nav:                 50px;
+$width-panel-sidebar:            257px;
+
+/* ----- Colors ----- */
+$color-brand:										 #DE2728;
+$color-black:                    #000000;
+$color-accent:                   #D26420;
+$color-accent-weak:              #E5A100;
+$color-marker1-strong:           #004734;
+$color-marker1-normal:           #166E42;
+$color-marker1-weak:             #269960;
+$color-marker2-vstrong:          #193661;
+$color-marker2-strong:           #005A96;
+$color-marker2-normal:           #008DB8;
+$color-marker2-weak:             #40D9FF;
+$color-neutral-strong:           #4D4D4D;
+$color-neutral-normal:           #8F8F8F;
+$color-neutral-normal2:          #7a8288;
+$color-neutral-weak:             #B8B8B8;
+$color-neutral-weak2:            #c8c8c8;
+$color-neutral-strong:           #3a3f44;
+
+$color-black-opacity-light:         rgba(0, 0, 0, 0.15);
+$color-black-opacity-medium:          rgba(0, 0, 0, 0.3);
+$color-black-opacity-strong:         rgba(0, 0, 0, 0.6);
+
+$color-neutral-vvvstrong:        #232628;
+$color-neutral-vvvstrong2:       #272b30;
+$color-neutral-vvvstrong3:       rgb(51, 51, 51);
+$color-neutral-vvvvstrong:       #101010;
+$color-neutral-vvvvvstrong:      #121415;
+$color-neutral-vvvvvstrong2:     #191B1E;
+$color-faint:                    #E5E5E5;
+$color-white:                    #FFFFFF;
+
+
+/* ----- Fonts ----- */
+$font-weight-extralight:  200;
+$font-weight-light:       300;
+$font-weight-normal:      400;
+$font-weight-semibold:    600;
+$font-weight-bold:        700;
+
+// -------------------------
+// Bootstrap Overrides
+// -------------------------
+
+/* ----- Typography ----- */
+$font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;

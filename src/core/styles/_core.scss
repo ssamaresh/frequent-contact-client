@@ -1,0 +1,389 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+html, body {
+  height: 100%;
+}
+
+body {
+    background-color: #D6D6D6;
+
+    // make sure that a horizontal scrollbar will show up for browser widths < 1200px
+    // min-width: 1200px;
+}
+
+/* Remove border to delete the 1px line */
+.navbar-fixed-top {
+    border: 0;
+}
+
+fc-dashboard {
+	height: 100%;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* Workaround for unwanted route changes due to empty href attributes - see http://angular-ui.github.io/bootstrap/ */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+
+.filterPanel {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    background-color: $color-neutral-normal;
+    width: $width-panel-sidebar;
+    height: calc( 100% - #{$height-top-nav});
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+
+.form-group {
+	label {
+		display: block;
+		text-align: left;
+	}
+}
+
+.accordion-toggle {
+  outline: 0 !important;
+}
+
+.subText {
+  color: #CCC;
+}
+
+/*
+ * overrides for dropdown
+ * pulled from theme-slate
+ */
+ /*!
+  * bootswatch v3.3.5
+  * Homepage: http://bootswatch.com
+  * Copyright 2012-2015 Thomas Park
+  * Licensed under MIT
+  * Based on Bootstrap
+ */
+ /*!
+  * Bootstrap v3.3.5 (http://getbootstrap.com)
+  * Copyright 2011-2015 Twitter, Inc.
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  */
+ /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+ /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+.btn:focus {
+  outline: 0 !important;
+}
+
+.btn-default {
+      color: $color-white;
+  background-color: $color-neutral-strong;
+  border-color: $color-black-opacity-strong;
+  text-shadow: 1px 1px 1px $color-black-opacity-medium;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: $color-white;
+  background-color: $color-neutral-vvvstrong;
+  border-color: $color-black;
+}
+.btn-default:hover {
+  color: $color-white;
+  background-color: $color-neutral-vvvstrong;
+  border-color: $color-neutral-vvvvstrong;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: $color-white;
+  background-color: $color-neutral-vvvstrong;
+  border-color: $color-neutral-vvvvstrong;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: $color-white;
+  background-color: $color-neutral-vvvvvstrong;
+  border-color: $color-black;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: $color-neutral-strong;
+  border-color: $color-neutral-strong;
+}
+.btn-default .badge {
+  color: $color-neutral-strong;
+  background-color: $color-white;
+}
+.multiselect {
+    padding-bottom:10px;
+}
+.multiselect .btn {
+    border: 1px solid transparent;
+    border-color: $color-black-opacity-strong;
+}
+.multiselect .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: $color-neutral-strong;
+    border: 1px solid $color-neutral-vvvstrong2;
+    border: 1px solid $color-black-opacity-light;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px $color-black-opacity-light;
+    background-clip: padding-box;
+}
+.multiselect .dropdown-menu > li > a:hover, .multiselect .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-neutral-vvvstrong2;
+}
+.multiselect .btn-default:hover {
+    color: $color-white;
+    background-color: $color-neutral-vvvstrong;
+    background-image: -webkit-linear-gradient(#020202, #101112 40%, #191b1d);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#020202), color-stop(40%, #101112), to(#191b1d));
+    background-image: linear-gradient(#020202, #101112 40%, #191b1d);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff020202', endColorstr='#ff191b1d', GradientType=0);
+    -webkit-filter: none;
+    filter: none;
+}
+.dropdown-menu {
+   background-color: $color-neutral-strong;
+   border: 1px solid $color-neutral-vvvstrong2;
+   border: 1px solid $color-black-opacity-light;
+   border-radius: 4px;
+   -webkit-box-shadow: 0 6px 12px $color-black-opacity-light;
+   box-shadow: 0 6px 12px $color-black-opacity-light;
+   -webkit-background-clip: padding-box;
+           background-clip: padding-box;
+ }
+ .dropdown-menu .divider {
+   background-color: $color-neutral-vvvstrong2;
+ }
+ .dropdown-menu > li > a {
+   color: $color-neutral-weak2;
+ }
+ .dropdown-menu > li > a:hover,
+ .dropdown-menu > li > a:focus {
+   background-color: $color-neutral-vvvstrong2;
+ }
+ .dropdown-menu > .active > a,
+ .dropdown-menu > .active > a:hover,
+ .dropdown-menu > .active > a:focus {
+   color: $color-white;
+   background-color: $color-neutral-vvvstrong2;
+ }
+ .dropdown-menu > .disabled > a,
+ .dropdown-menu > .disabled > a:hover,
+ .dropdown-menu > .disabled > a:focus {
+   color: $color-neutral-normal2;
+ }
+ .dropdown-menu > .disabled > a:hover,
+ .dropdown-menu > .disabled > a:focus {
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+   cursor: not-allowed;
+ }
+ .dropdown-header {
+   color: $color-neutral-normal2;
+ }
+
+
+/*
+ * custom styling for checks
+ * overrides defaults
+ */
+.dropdown-menu > li > a > span {
+    margin-left: 11px;
+}
+.dropdown-menu > li > a > span.glyphicon {
+   margin-left: -10px;
+}
+.glyphicon:before {
+    padding-right: 0px;
+    width: 10px;
+    background: none;
+}
+.glyphicon-spacechar:before {
+    content: "\00a0";
+}
+li > a.dropdown-action {
+    font-weight: lighter;
+
+    .glyphicon:before {
+        background:none;
+    }
+}
+li > a.dropdown-action span.glyphicon {
+    margin-right: 1px;
+}
+
+
+.form-group .customCheckboxGroup {
+
+    & [type="checkbox"] {
+        display:none;
+    }
+
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px;
+    }
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      position: relative;
+    //   padding-left: 25px;
+      cursor: pointer;
+    }
+
+    [type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    margin-right: 8px;
+    position: relative;
+    top: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 15px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    background-color: $color-neutral-weak;
+    -webkit-font-smoothing: antialiased;
+}
+
+    [type="checkbox"]:not(:checked) + label:before {
+        content: "\00a0";
+    }
+
+    [type="checkbox"]:checked + label:before {
+        content: "\e013";
+        font-family: 'Glyphicons Halflings';
+        top: 2px;
+    }
+
+    label {
+        display: inline-block;
+        text-transform: none;
+        color: $color-neutral-vvvstrong3;
+        font-weight: normal;
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+
+    }
+}
+
+.multiselect {
+
+
+	.multiselect-parent {
+		width: 100%;
+	}
+
+	.btn {
+		width: 100%;
+		padding: 3px 9px;
+		border-radius: 0;
+		font-size: 13px;
+		text-align: left;
+
+		.caret {
+			float: right;
+			margin-top: .5em;
+		}
+	}
+
+	.dropdown-menu {
+		width: 100%;
+		border-radius: 0;
+		border: 1px solid $color-neutral-strong;
+		border-radius: 0;
+		border-top: 0;
+		margin-top: 0;
+	}
+}
+
+
+
+.apply, .apply:hover {
+	background-color: #3fd8ff;
+	background: -webkit-linear-gradient(rgba(63,216,255,1), rgba(0,140,183,0.8)); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(rgba(63,216,255,1), rgba(0,140,183,0.8)); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(rgba(63,216,255,1), rgba(0,140,183,0.8)); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(rgba(63,216,255,1), rgba(0,140,183,0.8)); /* Standard syntax */
+}
+
+.reset, .reset:hover {
+	background-color: #b7b7b7;
+	background: -webkit-linear-gradient(rgba(181,181,181,1), rgba(76,76,76,0.6)); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(rgba(181,181,181,1), rgba(76,76,76,0.6)); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(rgba(181,181,181,1), rgba(76,76,76,0.6)); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(rgba(181,181,181,1), rgba(76,76,76,0.6)); /* Standard syntax */
+}
+
+.apply:active {
+	background-color: #008cb7;
+	background: -webkit-linear-gradient(rgba(0,140,183,1), rgba(63,216,255,0.8)); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(rgba(0,140,183,1), rgba(63,216,255,0.8)); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(rgba(0,140,183,1), rgba(63,216,255,0.8)); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(rgba(0,140,183,1), rgba(63,216,255,0.8)); /* Standard syntax */
+}
+
+.reset:active {
+	background-color: #8e8e8e;
+	background: -webkit-linear-gradient(rgba(76,76,76,0.4), rgba(181,181,181,0.8)); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(rgba(76,76,76,0.4), rgba(181,181,181,0.8)); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(rgba(76,76,76,0.4), rgba(181,181,181,0.8)); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(rgba(76,76,76,0.4), rgba(181,181,181,0.8)); /* Standard syntax */
+}
+
+.form-group label {
+	color: #D7D7D7;
+	text-transform: uppercase;
+	width: 100%;
+	font-weight: normal;
+}

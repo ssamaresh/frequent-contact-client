@@ -1,0 +1,16 @@
+
+<md-list flex class="tabs-container">
+	
+	<md-tabs md-stretch-tabs="always" md-selected="tabs.selectedIndex" md-border-bottom md-autoselect>
+		
+		<md-tab ng-repeat="tab in tabs.tabList" ui-sref={{tab.link}} ng-disabled="tab.disabled">
+			<md-label ng-bind-html="tab.title"></md-label>
+		</md-tab>	
+	
+	</md-tabs>
+
+</md-list>
+
+<!-- <md-button class="md-primary md-raised" ng-click="removeTab( tab )" ng-disabled="tabs.length <= 1">Remove Tab</md-button>
+        -->
+    <!-- <md-tabs md-selected="vm.data.selectedIndex">

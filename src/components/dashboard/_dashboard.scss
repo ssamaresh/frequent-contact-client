@@ -1,0 +1,38 @@
+/* ----- dashboard ----- */
+
+.dashboard-container {
+    height: 100%;
+    background: #FFF;
+}
+
+.contactSuccess {
+    position: fixed;
+    top: 84%;
+    background: #6DB327;
+    color: #FFF;
+    font-family: $font-family-sans-serif;
+    bottom: 0;
+    width: 100%;
+    z-index: 99999;
+    margin: auto;
+    padding: 30px;
+}
+
+.contactSuccessIcon {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    font-size: 1.5em;
+    float: left;
+    line-height: 4;
+}
+
+.contactSuccessIcon .glyphicon {
+    font-size: 2em;
+    color: #fff;
+}
+
+.contactSuccessContent{
+    font-size: 1.5em;
+    float: left;
+}

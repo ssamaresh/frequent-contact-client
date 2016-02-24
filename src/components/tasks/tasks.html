@@ -1,0 +1,16 @@
+
+<md-content layout="row">
+
+	<md-sidenav md-component-id="left" class="md-sidenav-left" md-is-locked-open="$mdMedia('gt-sm')">
+
+		<fc-task-list class="tasks-container" data-tasks="vm.tasks"></fc-task-list>
+
+	</md-sidenav>
+	
+	<div flex>
+
+		<div ui-view></div>
+
+	</div>
+
+</md-content>

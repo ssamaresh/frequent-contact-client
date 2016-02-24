@@ -1,0 +1,56 @@
+
+
+.tabs-container {
+  
+  margin-right: auto;
+  margin-left: auto;
+  background: $color-brand;
+  padding: 0;
+  
+  .md-tab {
+    font-size: 0.7em;
+    color: #FFF;
+  }
+
+  md-tab-item span {
+    font-size: 0.7em;
+    color: #FFF;
+  }
+
+  md-tabs-canvas, md-pagination-wrapper {
+    height: 50px;
+  }
+
+  md-tabs[md-border-bottom] md-tabs-wrapper {
+    border: none;
+  }
+
+  md-ink-bar {
+    height: 3px;
+    background: #FCFCFC;
+  }
+
+  .navbar-brand, .navbar li, .navbar a {
+    padding: 0;
+  }
+
+  .caret {
+    float:right;
+    margin: 6px 0px;
+  }
+
+  .myButton {
+    border-radius:0;
+    border: 1px solid #808080 ;
+    background: none;
+    margin: 15px 20px;
+    color: #0589ec ;
+    width: 200px;
+    text-align: left;
+  }
+  
+}
+
+
+
+

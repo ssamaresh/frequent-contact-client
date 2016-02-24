@@ -1,0 +1,61 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "dueDate": "2015-08-29T16:00:00.000Z",
+            "frequency": "Weekly",
+            "type": "Call",
+            "primaryOwner": "edana@sapient.com",
+            "secondaryOwner": "nbhatia@sapient.com",
+            "contact": "jdoe@sapient.com"
+        }
+    ],
+    "included": {
+        
+        "people": [
+            {   
+                "company": "sapient",
+                "division" : "Global Markets",
+                "email": "edana@sapient.com",
+                "firstName": "Evan",
+                "lastName": "Dana",
+                "location": "BOS",
+                "notes": "This is a test",
+                "phone": "2342342345",
+                "picture": "http://peopleportal2/my/User%20Photos/Profile%20Pictures/sapient_edana_LThumb.jpg",
+                "title": "Senior Interactive Developer L2"
+            },
+            {
+                "company": "sapient",
+                "division": "Global Markets",
+                "email": "nbhatia@sapient.com",
+                "firstName": "Naresh",
+                "lastName": "Bhatia",
+                "location": "BOS",              
+                "notes": "Aother test 12",
+                "phone": "2342342345",
+                "picture": "http://peopleportal2/my/User%20Photos/Profile%20Pictures/sapient_ebhati_LThumb.jpg",
+                "title": "VP Technology"
+            },
+            {
+                "company": "fidelity-investments",
+                "division": "fimt-feht",
+                "email": "jdoe@sapient.com",
+                "firstName": "John",
+                "lastName": "Doe",
+                "location": "BOS",
+                "notes": "Aother test ",
+                "phone": "1112223334",
+                "picture": "",
+                "title": "Manager"
+            }
+        ],
+
+        "company": [
+            {
+                "id": "fidelity-investments",
+                "name": "Fidelity Investments"
+            }
+        ]
+    }
+}

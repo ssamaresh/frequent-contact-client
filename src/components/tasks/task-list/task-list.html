@@ -1,0 +1,54 @@
+	
+	<md-content flex layout-align="start start">
+  
+    <md-button class="addTaskButton">
+		
+      <i class="material-icons">add</i>
+		  Add Task
+	   
+    </md-button>
+	
+	</md-content>
+
+	<md-content>
+    		
+		<md-list>
+
+  		<md-list-item class="md-3-line" ng-repeat="task in tasks[0]" >
+
+    		<div layout="row" class="md-list-item-text">
+          
+          <div flex="5" class="taskCheck" layout="start center">
+    
+    					<md-checkbox class="md-warn" aria-label="Complete Task">
+        		  </md-checkbox>
+          
+          </div>
+          
+          <div layout="row" class="md-list-item-text" ui-sref="tasks.detail({taskId: task.id})">
+            
+            <img flex="nogrow" ng-src="{{ getPhoto(task.contact) }}" class="md-avatar contact-image" />
+
+            <div class="md-list-item-text taskContent" layout="column" layout-align="start start">
+              <span class="md-body-2">{{ getName(task.contact) }}</span>
+              <span class="md-body-2 subText">{{ getCompanyName(task.contact) }} - {{ getPersonTitle(task.contact) }}</span>
+            </div>   		
+            
+            <div flex="20" class="md-list-item-text taskDueDate" ng-class="{'taskOverdue': dueOn}" layout-align="end center">
+              {{ calculateDueDate(task.dueDate) }}
+            </div>
+          
+          </div>
+
+  			</div>
+    
+    		<md-divider ng-if="!$last"></md-divider>
+  		
+  		</md-list-item>
+		
+		</md-list>
+	
+	</md-content>
+
+</div>
+  
